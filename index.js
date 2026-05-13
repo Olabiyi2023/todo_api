@@ -3,7 +3,7 @@ const cors = require('cors');
 const moongoose = require('mongoose');
 const live_url = 'mongodb://dev_olabiyi:test1234@ac-fzah8uz-shard-00-00.0c8djyq.mongodb.net:27017,ac-fzah8uz-shard-00-01.0c8djyq.mongodb.net:27017,ac-fzah8uz-shard-00-02.0c8djyq.mongodb.net:27017/?ssl=true&replicaSet=atlas-2t4hxo-shard-0&authSource=admin&appName=Cluster0';
 const local_url = 'mongodb://localhost:27017/userDB';
-const router = require('./routes/todoRoutes');
+const router = require('./routes/todoRoutes.js');
 
 moongoose.connect(live_url)
     .then(() => console.log('Connected to MongoDB'))
